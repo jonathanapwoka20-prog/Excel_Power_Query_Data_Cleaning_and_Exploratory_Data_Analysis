@@ -170,85 +170,85 @@ If Max = null then Min
 Else (Min + Max) / 2
 
 📸 **Screenshot to include:**
-- [cite_start]Size split & employee count average calculation [cite: 136]
+- Size split & employee count average calculation
 
 ---
 
 ### 5.7 Revenue Column Transformation
-[cite_start]The Revenue column contained highly inconsistent text-based ranges[cite: 138].
+The Revenue column contained highly inconsistent text-based ranges.
 
-[cite_start]**Step 1: Clean Text Noise** [cite: 139]
-- [cite_start]Removed $, USD, and irrelevant text [cite: 140]
-- [cite_start]Replaced "Unknown/Non-Applicable" with null [cite: 143]
-- [cite_start]Replaced "Less than 1 million" → 0 to 1 million [cite: 144]
-- [cite_start]Replaced "10+ billion" → 10 to 11 billion [cite: 146]
+**Step 1: Clean Text Noise**
+- Removed $, USD, and irrelevant text
+- Replaced "Unknown/Non-Applicable" with null
+- Replaced "Less than 1 million" → 0 to 1 million
+- Replaced "10+ billion" → 10 to 11 billion 
 
-[cite_start]**Step 2: Split Revenue Ranges** [cite: 147]
-- [cite_start]Split column by delimiter " to " [cite: 148]
-- [cite_start]Created lower and upper revenue bounds [cite: 149]
+**Step 2: Split Revenue Ranges**
+- Split column by delimiter " to "
+- Created lower and upper revenue bounds
 
-[cite_start]**Step 3: Normalize Units** [cite: 150]
-- [cite_start]Converted millions and billions into numeric multipliers (1,000,000 and 1,000,000,000) [cite: 151-155]
+**Step 3: Normalize Units**
+- Converted millions and billions into numeric multipliers (1,000,000 and 1,000,000,000)
 
-[cite_start]**Step 4: Final Revenue Calculation** [cite: 156]
-- [cite_start]Used custom columns to compute numeric revenue values [cite: 157]
-- [cite_start]Standardized all revenue figures into comparable numeric form [cite: 158]
+**Step 4: Final Revenue Calculation**
+- Used custom columns to compute numeric revenue values
+- Standardized all revenue figures into comparable numeric form
 
-[cite_start]📸 **Screenshots to include:** - Revenue value replacements [cite: 160]
-- [cite_start]Revenue range split [cite: 161]
-- [cite_start]Custom column calculations [cite: 162]
+📸 **Screenshots to include:** - Revenue value replacements 
+- Revenue range split
+- Custom column calculations
 
 ---
 
 ## Exploratory Data Analysis (EDA)
 
 ### 6.1 Salary by Role Type
-- [cite_start]Grouped by Role Type [cite: 165]
-- [cite_start]Calculated count, average minimum salary, and average maximum salary [cite: 166]
-- [cite_start]Sorted by average maximum salary (DESC) [cite: 167]
+- Grouped by Role Type
+- Calculated count, average minimum salary, and average maximum salary
+- Sorted by average maximum salary (DESC)
 
-[cite_start]📸 **Screenshot to include:** - Salary by Role Type output [cite: 168]
+📸 **Screenshot to include:** - Salary by Role Type output
 
 ### 6.2 Salary by Company Size
-- [cite_start]Grouped salaries by company size [cite: 170]
-- [cite_start]Compared compensation trends across firm sizes [cite: 171]
+- Grouped salaries by company size
+- Compared compensation trends across firm sizes
 
-[cite_start]📸 **Screenshot to include:** - Salary by Company Size output [cite: 172]
+📸 **Screenshot to include:** - Salary by Company Size output
 
 ### 6.3 Salary by State
-- [cite_start]Grouped by full state name [cite: 174]
-- [cite_start]Identified top-paying locations [cite: 175]
+- Grouped by full state name
+- Identified top-paying locations
 
-[cite_start]📸 **Screenshot to include:** - Salary by State output [cite: 176]
+📸 **Screenshot to include:** - Salary by State output
 
 ### 6.4 Salary by Role Type & Company Size
-- [cite_start]Multi-dimensional grouping [cite: 178]
-- [cite_start]Revealed how compensation scales by role and organization size [cite: 179]
+- Multi-dimensional grouping
+- Revealed how compensation scales by role and organization size 
 
-[cite_start]📸 **Screenshot to include:** - Role Type vs Company Size output [cite: 180]
+📸 **Screenshot to include:** - Role Type vs Company Size output
 
 ---
 
 ## Key Insights
-- [cite_start]**Machine Learning and Data Engineering** roles command the highest salaries[cite: 182].
-- [cite_start]**Larger firms** tend to offer higher compensation[cite: 183].
-- [cite_start]**Location** plays a significant role in salary variation[cite: 184].
-- [cite_start]Robust data cleaning **materially improves insight quality**[cite: 185].
+- **Machine Learning and Data Engineering** roles command the highest salaries.
+- **Larger firms** tend to offer higher compensation.
+- **Location** plays a significant role in salary variation.
+- Robust data cleaning **materially improves insight quality**.
 
 ---
 
 ## Skills Demonstrated
-- [cite_start]Advanced Excel Power Query [cite: 187]
-- [cite_start]Data cleaning & transformation [cite: 188]
-- [cite_start]Feature engineering [cite: 189]
-- [cite_start]Conditional logic & custom columns [cite: 190]
-- [cite_start]Salary analytics & EDA [cite: 191]
-- [cite_start]Business-focused data storytelling [cite: 192]
+- Advanced Excel Power Query
+- Data cleaning & transformation
+- Feature engineering
+- Conditional logic & custom columns
+- Salary analytics & EDA
+- Business-focused data storytelling
 
 ---
 
 ## How to Reproduce This Project
-1. [cite_start]Download the raw dataset from **Kaggle.com**[cite: 34].
-2. [cite_start]Load the data into **Microsoft Excel**[cite: 38].
-3. [cite_start]Open **Power Query Editor** and apply the transformation steps detailed in Section 5[cite: 77].
-4. [cite_start]Use the engineered columns to generate the EDA outputs shown in Section 6[cite: 163].
+1. Download the raw dataset from **Kaggle.com**.
+2. Load the data into **Microsoft Excel**.
+3. Open **Power Query Editor** and apply the transformation steps detailed in Section 5
+4. Use the engineered columns to generate the EDA outputs shown in Section 6.
