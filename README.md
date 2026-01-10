@@ -93,8 +93,6 @@ The Job Description column was removed as it was not relevant to salary analysis
 - Checked for duplicate records (none found)
 - Sorted index column for data traceability
 
-📸 **Screenshot:** Initial Power Query load & applied steps pane
-
 ---
 
 ### 5.2 Salary Extraction & Transformation
@@ -107,8 +105,6 @@ The Salary Estimate column contained salary ranges in text format.
   - Maximum Salary
 - Converted salary fields to Currency
 - Multiplied values by 1,000 to reflect actual salaries
-
-📸 **Screenshot:** Column from Examples extracting Min & Max Salary
 
 ---
 
@@ -123,21 +119,24 @@ Job titles were standardized into broader role categories using a custom column.
 - Machine Learning Engineer
 - Other
 
-📸 **Screenshot:** Custom column IF/ELSE logic for Role Type
+Custom column IF/ELSE logic for Role Type;
+
+<img width="1920" height="1020" alt="Screenshot 2026-01-10 024352" src="https://github.com/user-attachments/assets/e7d08a56-c91c-4164-8c27-07a2a2fe6dbe" />
+
 
 ---
 
 ### 5.4 Location Standardization
 
-- Extracted State names and abbreviations from Location
-- Resolved inconsistencies (e.g., “Anne Arundel, MD”)
+- Extracted State names and abbreviations from Location using; text extraction before & after delimiter
+- Resolved inconsistencies (e.g. “Anne Arundel, MD”)
 - Applied TRIM to remove trailing spaces
 - Merged with a state-mapping table to retrieve full state names
 
-📸 **Screenshots:**  
-- Text extraction before delimiter  
-- TRIM operation  
-- Merge Queries window  
+Merge Queries window;
+
+<img width="877" height="790" alt="Screenshot 2026-01-09 213044" src="https://github.com/user-attachments/assets/8786f14d-b032-454c-8682-c0615b3ef946" />
+
 
 ---
 
@@ -151,7 +150,9 @@ Company name and rating were stored in a single column.
 3. Split the column using **Line Feed (#(lf))**
 4. Created separate Company Name and Company Rating columns
 
-📸 **Screenshot:** Split Column by Special Character (Line Feed)
+Split Column by Special Character (Line Feed);
+
+<img width="877" height="728" alt="Screenshot 2026-01-09 191537" src="https://github.com/user-attachments/assets/694d3f3d-9a38-43a3-a456-52737437f859" />
 
 ---
 
@@ -160,17 +161,13 @@ Company name and rating were stored in a single column.
 Company size was stored as text ranges.
 
 **Steps taken:**
-- Standardized text values (e.g., “501 to 1000” → “501-1000”)
+- Standardized text values (e.g. “501 to 1000” → “501-1000”)
 - Split size into Min and Max employee counts
 - Created a custom column to compute average employee count per company
 
-**Custom Logic:**
+Custom Logic;
 
-If Max = null then Min
-Else (Min + Max) / 2
-
-📸 **Screenshot to include:**
-- Size split & employee count average calculation
+<img width="877" height="551" alt="image" src="https://github.com/user-attachments/assets/403c1baf-e985-482d-ba88-ec69e02d7f21" />
 
 ---
 
@@ -178,7 +175,7 @@ Else (Min + Max) / 2
 The Revenue column contained highly inconsistent text-based ranges.
 
 **Step 1: Clean Text Noise**
-- Removed $, USD, and irrelevant text
+- Removed $, USD and irrelevant text
 - Replaced "Unknown/Non-Applicable" with null
 - Replaced "Less than 1 million" → 0 to 1 million
 - Replaced "10+ billion" → 10 to 11 billion 
@@ -194,9 +191,13 @@ The Revenue column contained highly inconsistent text-based ranges.
 - Used custom columns to compute numeric revenue values
 - Standardized all revenue figures into comparable numeric form
 
-📸 **Screenshots to include:** - Revenue value replacements 
-- Revenue range split
-- Custom column calculations
+Revenue range split & replacements;
+
+<img width="1158" height="570" alt="Screenshot 2026-01-09 203631" src="https://github.com/user-attachments/assets/05bd56b7-34a7-460c-871e-5bdd52535363" />
+
+Custom column calculations;
+
+<img width="877" height="551" alt="Screenshot 2026-01-09 204100" src="https://github.com/user-attachments/assets/623e5324-1e4b-45b4-8c64-bad6264657e7" />
 
 ---
 
@@ -204,28 +205,40 @@ The Revenue column contained highly inconsistent text-based ranges.
 
 ### 6.1 Salary by Role Type
 - Grouped by Role Type
-- Calculated count, average minimum salary, and average maximum salary
+- Calculated count, average minimum salary and average maximum salary
 - Sorted by average maximum salary (DESC)
 
-📸 **Screenshot to include:** - Salary by Role Type output
+Salary by Role Type Group By Step;
+
+<img width="877" height="663" alt="Screenshot 2026-01-09 052605" src="https://github.com/user-attachments/assets/20442e0e-2a59-466c-8676-1fd3f02c0308" />
+
+Salary by Role Type output;
+
+<img width="1920" height="1020" alt="Screenshot 2026-01-09 211544" src="https://github.com/user-attachments/assets/d45300db-b1e9-4e47-bfb1-b1741e0559ea" />
 
 ### 6.2 Salary by Company Size
 - Grouped salaries by company size
 - Compared compensation trends across firm sizes
 
-📸 **Screenshot to include:** - Salary by Company Size output
+Salary by Company Size output;
+
+<img width="1920" height="1020" alt="Screenshot 2026-01-09 212516" src="https://github.com/user-attachments/assets/b6da2bb2-71f4-4fb9-8393-fcfcb3cf921f" />
 
 ### 6.3 Salary by State
 - Grouped by full state name
 - Identified top-paying locations
 
-📸 **Screenshot to include:** - Salary by State output
+Salary by State output;
+
+<img width="1920" height="1020" alt="Screenshot 2026-01-09 213648" src="https://github.com/user-attachments/assets/25ae6cf5-7e40-421e-83cf-c0c920f1d3db" />
 
 ### 6.4 Salary by Role Type & Company Size
 - Multi-dimensional grouping
 - Revealed how compensation scales by role and organization size 
 
-📸 **Screenshot to include:** - Role Type vs Company Size output
+Role Type vs Company Size output;
+
+<img width="1920" height="1020" alt="Screenshot 2026-01-09 214802" src="https://github.com/user-attachments/assets/df944d35-a2b0-4693-a57e-dfa5aa4c82df" />
 
 ---
 
@@ -247,8 +260,7 @@ The Revenue column contained highly inconsistent text-based ranges.
 
 ---
 
-## How to Reproduce This Project
-1. Download the raw dataset from **Kaggle.com**.
+## How to view and interact with the Project
+1. Download the raw dataset from the files section.
 2. Load the data into **Microsoft Excel**.
-3. Open **Power Query Editor** and apply the transformation steps detailed in Section 5
-4. Use the engineered columns to generate the EDA outputs shown in Section 6.
+3. Open **Power Query Editor** if need be.
