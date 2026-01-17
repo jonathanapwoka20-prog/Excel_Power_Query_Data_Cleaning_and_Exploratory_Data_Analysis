@@ -27,7 +27,8 @@
    - 6.3 [Salary by State](#63-salary-by-state)
    - 6.4 [Salary by Role Type & Company Size](#64-salary-by-role-type--company-size)
 7. [Key Insights](#key-insights)
-8. [Skills Demonstrated](#skills-demonstrated)
+8. [Recommendations](#recommendations)
+9. [Skills Demonstrated](#skills-demonstrated)
 
 ---
 
@@ -247,6 +248,15 @@ Role Type vs Company Size output;
 - **Larger firms** tend to offer higher compensation where firms with staff above **100** pay higher average maximum salaries **($152,085.94)** while those with relatively small numebr of staff e.g **80**, pay a lower average maximum salary **($141,862.50).**
 - **Location** plays a significant role in salary variation: ***FortSam Houston, Wilmington, Pleasanton*** state-cities pay an average maximum salary of **$331,000** and a lower average bound of **$212,000.** 
 - Robust data cleaning **materially improves insight quality**.
+
+---
+
+## Recommendations 
+- Prioritize Machine Learning and Data Engineering talent as they command the highest compensation, reflecting market demand.
+- Larger firms should leverage compensation benchmarking to remain competitive in attracting top talent.
+- Smaller firms can differentiate with non-monetary incentives (flexibility, growth opportunities) to offset lower salary bands.
+- Location-based salary disparities highlight the need for regional pay strategies to ensure fairness and competitiveness.
+- Continue using Power Query for robust data cleaning, as it significantly improves the accuracy and reliability of insights.
 
 ---
 
