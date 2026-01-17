@@ -243,9 +243,9 @@ Role Type vs Company Size output;
 ---
 
 ## Key Insights
-- **Machine Learning and Data Engineering** roles command the highest salaries.
-- **Larger firms** tend to offer higher compensation.
-- **Location** plays a significant role in salary variation.
+- **Machine Learning and Data Engineering** roles command the highest salaries with Average Maximum salary for **Machine Learning** being **$130,923.08** and Average Maximum salary for **Data Engineering** being **$150,791.59.**
+- **Larger firms** tend to offer higher compensation where firms with staff above **100** pay higher average maximum salaries **($152,085.94)** while those with relatively small numebr of staff e.g **80**, pay a lower average maximum salary **($141,862.50).**
+- **Location** plays a significant role in salary variation: ***FortSam Houston, Wilmington, Pleasanton*** state-cities pay an average maximum salary of **$331,000** and a lower average bound of **$212,000.** 
 - Robust data cleaning **materially improves insight quality**.
 
 ---
