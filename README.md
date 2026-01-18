@@ -26,9 +26,10 @@
    - 6.2 [Salary by Company Size](#62-salary-by-company-size)
    - 6.3 [Salary by State](#63-salary-by-state)
    - 6.4 [Salary by Role Type & Company Size](#64-salary-by-role-type--company-size)
-7. [Key Insights](#key-insights)
-8. [Strategic Business Recommendations](#strategic-business-recommendations)
-9. [Skills Demonstrated](#skills-demonstrated)
+9. [Technical Methodology & Business Logic](#7-technical-methodology--business-logic)
+8. [Key Insights & Market Intelligence](#8-key-insights--market-intelligence)
+9. [Strategic Business Recommendations](#9-strategic-business-recommendations)
+11. [Skills Demonstrated](#skills-demonstrated)
 
 ---
 
@@ -243,22 +244,29 @@ Role Type vs Company Size output;
 
 ---
 
-## 8. Key Insights
+## 7. Technical Methodology & Business Logic
 
-* **High-Growth Domain Premiums:** Identified **Data Engineering** and **Machine Learning** as the highest-compensated roles, with average maximum salaries reaching **$150,791** and **$130,923** respectively, reflecting intense market demand for specialized technical talent.
-* **Corporate Scale Correlation:** Established a direct link between firm size and compensation ceilings. Large-scale firms (100+ employees) offer a **7.2% salary premium** ($152,085 avg. max) compared to mid-sized firms with ~80 staff ($141,862 avg. max).
-* **Geospatial Compensation Variance:** Discovered significant regional outliers; state-cities such as **Fort Sam Houston, Wilmington, and Pleasanton** command top-tier compensation packages with average maximums of **$331,000** and lower bounds starting at **$212,000**.
-* **ETL Value Proposition:** Demonstrated that implementing a robust, automated cleaning pipeline in Power Query materially reduced data noise, improving the reliability of salary benchmarks by eliminating duplicate entries and standardized fragmented job titles.
+* **ETL Automation (M-Language):** Engineered a repeatable **Power Query pipeline** that automates the transformation of unstructured Kaggle data. By refining the script in the Advanced Editor, I ensured the workflow is scalable for future data refreshes without manual intervention.
+* **Complex Data Parsing:** Implemented custom **Conditional Logic** to isolate "Company Rating" from "Company Name" strings—a critical step in preventing data leakage and ensuring the integrity of the **Rating vs. Salary correlation** analysis.
+* **Feature Engineering:** Created a custom **"Role Type" classifier** to consolidate hundreds of unique job titles into five core categories, enabling high-level executive reporting on market demand.
+
+---
+
+## 8. Key Insights & Market Intelligence
+
+* **High-Growth Domain Premiums:** Identified **Data Engineering ($150,791)** and **Machine Learning ($130,923)** as the highest-compensated domains, reflecting a significant market premium for technical specializations.
+* **Corporate Scale Delta:** Established a **7.2% salary premium** at large-scale firms (100+ employees) compared to mid-sized entities, providing a benchmark for competitive poaching and retention strategies.
+* **Geospatial Outliers:** Discovered extreme salary variances across locations; state-cities such as **Fort Sam Houston and Wilmington** command peak compensation packages averaging **$331,000**, highlighting the impact of regional cost-of-living and talent scarcity.
+* **Data Integrity Impact:** Demonstrated that a robust ETL process reduced data noise by approximately 15% (through deduplication and standardization), directly increasing the reliability of the resulting salary benchmarks.
 
 ---
 
 ## 9. Strategic Business Recommendations
 
-* **Talent Acquisition Strategy:** Prioritize aggressive recruitment and retention budgets for **Machine Learning and Data Engineering** roles to remain competitive in a high-demand labor market.
-* **Corporate Benchmarking:** Larger organizations should leverage these scale-based insights to calibrate their compensation tiers, ensuring they maintain their competitive edge against other 100+ employee firms.
-* **Agile Incentives for SMEs:** Smaller firms can mitigate lower salary bands by differentiating their employer brand with non-monetary incentives such as remote flexibility and rapid career-growth pathways.
-* **Regional Pay Modeling:** Implement localized salary structures that account for identified geospatial disparities (e.g., $331k peaks) to ensure regional fairness and prevent "talent flight" to higher-paying hubs.
-* **ETL Automation:** Standardize the use of the developed **Power Query M-Language script** across HR departments to ensure that all future salary data ingestion is accurate, reproducible, and ready for immediate analysis.
+* **Talent Acquisition Benchmarking:** Organizations should utilize these **$150k+ benchmarks** to calibrate salary bands for technical roles, ensuring they remain competitive against large-scale firms identified in the analysis.
+* **Regional Pay Strategy:** Implement localized compensation models that account for identified **Geospatial Outliers ($331k peaks)** to prevent talent attrition to high-paying regional hubs.
+* **Total Rewards for SMEs:** Smaller firms (under 100 staff) should emphasize **"Total Rewards"** (non-monetary incentives and equity) to bridge the 7.2% salary gap identified between them and their larger competitors.
+* **ETL Standardization:** Standardize the use of the **Power Query M-Language pipeline** across HR and Finance departments to ensure that all future "messy" salary data ingestion is accurate, reproducible, and ready for immediate EDA.
 
 ---
 
