@@ -27,7 +27,7 @@
    - 6.3 [Salary by State](#63-salary-by-state)
    - 6.4 [Salary by Role Type & Company Size](#64-salary-by-role-type--company-size)
 7. [Key Insights](#key-insights)
-8. [Recommendations](#recommendations)
+8. [Strategic Business Recommendations](#strategic-business-recommendations)
 9. [Skills Demonstrated](#skills-demonstrated)
 
 ---
@@ -243,20 +243,22 @@ Role Type vs Company Size output;
 
 ---
 
-## Key Insights
-- **Machine Learning and Data Engineering** roles command the highest salaries with Average Maximum salary for **Machine Learning** being **$130,923.08** and Average Maximum salary for **Data Engineering** being **$150,791.59.**
-- **Larger firms** tend to offer higher compensation where firms with staff above **100** pay higher average maximum salaries **($152,085.94)** while those with relatively small numebr of staff e.g **80**, pay a lower average maximum salary **($141,862.50).**
-- **Location** plays a significant role in salary variation: ***FortSam Houston, Wilmington, Pleasanton*** state-cities pay an average maximum salary of **$331,000** and a lower average bound of **$212,000.** 
-- Robust data cleaning **materially improves insight quality**.
+## 8. Key Insights
+
+* **High-Growth Domain Premiums:** Identified **Data Engineering** and **Machine Learning** as the highest-compensated roles, with average maximum salaries reaching **$150,791** and **$130,923** respectively, reflecting intense market demand for specialized technical talent.
+* **Corporate Scale Correlation:** Established a direct link between firm size and compensation ceilings. Large-scale firms (100+ employees) offer a **7.2% salary premium** ($152,085 avg. max) compared to mid-sized firms with ~80 staff ($141,862 avg. max).
+* **Geospatial Compensation Variance:** Discovered significant regional outliers; state-cities such as **Fort Sam Houston, Wilmington, and Pleasanton** command top-tier compensation packages with average maximums of **$331,000** and lower bounds starting at **$212,000**.
+* **ETL Value Proposition:** Demonstrated that implementing a robust, automated cleaning pipeline in Power Query materially reduced data noise, improving the reliability of salary benchmarks by eliminating duplicate entries and standardized fragmented job titles.
 
 ---
 
-## Recommendations 
-- Prioritize Machine Learning and Data Engineering talent as they command the highest compensation, reflecting market demand.
-- Larger firms should leverage compensation benchmarking to remain competitive in attracting top talent.
-- Smaller firms can differentiate with non-monetary incentives (flexibility, growth opportunities) to offset lower salary bands.
-- Location-based salary disparities highlight the need for regional pay strategies to ensure fairness and competitiveness.
-- Continue using Power Query for robust data cleaning, as it significantly improves the accuracy and reliability of insights.
+## 9. Strategic Business Recommendations
+
+* **Talent Acquisition Strategy:** Prioritize aggressive recruitment and retention budgets for **Machine Learning and Data Engineering** roles to remain competitive in a high-demand labor market.
+* **Corporate Benchmarking:** Larger organizations should leverage these scale-based insights to calibrate their compensation tiers, ensuring they maintain their competitive edge against other 100+ employee firms.
+* **Agile Incentives for SMEs:** Smaller firms can mitigate lower salary bands by differentiating their employer brand with non-monetary incentives such as remote flexibility and rapid career-growth pathways.
+* **Regional Pay Modeling:** Implement localized salary structures that account for identified geospatial disparities (e.g., $331k peaks) to ensure regional fairness and prevent "talent flight" to higher-paying hubs.
+* **ETL Automation:** Standardize the use of the developed **Power Query M-Language script** across HR departments to ensure that all future salary data ingestion is accurate, reproducible, and ready for immediate analysis.
 
 ---
 
